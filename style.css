@@ -17,6 +17,7 @@ body, html {
 
 #section1 {
   background: whitesmoke;
+  /*background: #ffff33;*/
 }
 
 #section2 {
@@ -25,4 +26,17 @@ body, html {
 
 #section3 {
   background: whitesmoke;
+}
+
+#webnav {
+  background: #277CCA;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#webfooter {
+  background: #277CCA;
+  height: 30%;
+  width: 100%;
 }
