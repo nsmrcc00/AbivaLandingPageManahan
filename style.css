@@ -36,7 +36,16 @@ body, html {
 }
 
 #webfooter {
+  padding-top: 2em;
+  display: flex;
+  justify-content: center;
   background: #277CCA;
   height: 30%;
   width: 100%;
+}
+
+#icongroup {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
 }

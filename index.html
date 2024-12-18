@@ -13,8 +13,8 @@
       <a href=""><img src="public/abiva.png" alt="Home" width="31px" height="48px"></a>
       <a href="">Home</a>
       <a href="">About Us</a>
-      <a href="">Contact Us</a>
-      <a href="">Install Now!</a>
+      <a href="#" onclick="document.getElementById('webfooter').scrollIntoView();">Contact Us</a>
+      <a href="#" onclick="document.getElementById('installnow').scrollIntoView();">Install Now!</a>
     </nav>
     <div class="section" id="section1">
       Cover Photo with description  
@@ -23,14 +23,17 @@
       Features
     </div>
     <div class="section" id="section3">
+      <div id="installnow">
+        <img src="public/phone.png" alt="Install Now!" height="500px">
+      </div>
       Picture of Phone + QR and other details
     </div>
     <footer id="webfooter">
-      <nav>
-        <a href="https://www.facebook.com/abivapublishing" target="_blank">FB</a>
-        <a href="https://www.instagram.com/abivapublishing/">IG</a>
-        <a href="https://x.com/abivapublishing">Twitter</a>
-        <a href="https://www.youtube.com/@abivapublishinghouseinc4871" target="_blank">YT</a>
+      <nav id="icongroup">
+        <a href="https://www.facebook.com/abivapublishing" target="_blank"><img src="public/facebook.png" alt="Facebook" width="48px" height="48px"></a>
+        <a href="https://www.instagram.com/abivapublishing/" target="_blank"><img src="public/instagram.png" alt="Instagram" width="48px" height="48px"></a>
+        <a href="https://x.com/abivapublishing" target="_blank"><img src="public/twitter.png" alt="X (Twitter)" width="48px" height="48px"></a>
+        <a href="https://www.youtube.com/@abivapublishinghouseinc4871" target="_blank"><img src="public/youtube.png" alt="YouTube" width="48px" height="48px"></a>
       </nav>
     </footer>
   </body>
