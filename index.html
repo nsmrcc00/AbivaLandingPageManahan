@@ -11,13 +11,20 @@
   <body>
     <nav class="navbar" id="webnav">
       <a href=""><img src="public/abiva.png" alt="Home" width="31px" height="48px"></a>
-      <a href="">Home</a>
-      <a href="">About Us</a>
-      <a href="#" onclick="document.getElementById('webfooter').scrollIntoView();">Contact Us</a>
-      <a href="#" onclick="document.getElementById('installnow').scrollIntoView();">Install Now!</a>
+      <a class="navitems" href="">Home</a>
+      <a class="navitems" href="">About Us</a>
+      <a class="navitems" href="#" onclick="document.getElementById('webfooter').scrollIntoView();">Contact Us</a>
+      <a class="navitems" href="#" onclick="document.getElementById('section3').scrollIntoView();">Install Now!</a>
     </nav>
     <div class="section" id="section1">
-      Cover Photo with description  
+      Cover Photo with description
+      <p>The newest way to learn has just arrived.</p>  
+    </div>
+    <div class="section" id="section2">
+      <div class="feature-container">
+        <div>1</div>
+        <div>2</div>
+      </div>
     </div>
     <div class="section" id="section2">
       Features
@@ -25,8 +32,21 @@
     <div class="section" id="section3">
       <div id="installnow">
         <img src="public/phone.png" alt="Install Now!" height="500px">
+        <div id="qrlayout">
+        <!--<img class="aln" src="public/qr.png" alt="Install Now!" height="200px">-->
+          <h2 id="installheader">Learn like you've never learned before.</h2>
+          <div id="installon">
+            <img src="public/appstore.png" alt="Apple App Store" height="36px">
+            <img src="public/gplay.png" alt="Google Play Store" height="36px">
+          </div>
+          <p>
+            Now available on Google Play and the Apple App Store.            
+          </p>
+          
+        </div>
+        
       </div>
-      Picture of Phone + QR and other details
+      
     </div>
     <footer id="webfooter">
       <nav id="icongroup">
@@ -35,6 +55,9 @@
         <a href="https://x.com/abivapublishing" target="_blank"><img src="public/twitter.png" alt="X (Twitter)" width="48px" height="48px"></a>
         <a href="https://www.youtube.com/@abivapublishinghouseinc4871" target="_blank"><img src="public/youtube.png" alt="YouTube" width="48px" height="48px"></a>
       </nav>
+      <div id="footertext">
+        <p>Abiva Publishing House</p>
+      </div>
     </footer>
   </body>
 </html>
