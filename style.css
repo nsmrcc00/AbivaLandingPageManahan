@@ -6,27 +6,56 @@ body, html {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
+#webnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #277CCA;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+
+.nav-items-container {
+  display: flex;
+  gap: 1em; /* Space between central nav items */
+  flex-wrap: nowrap; /* Prevent items from wrapping */
+}
+
+.navitems {
+  color: white;
+  text-decoration: none;
+  font-size: 1.25em;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+#webnav a:last-child {
+  margin-left: auto; /* Push 'Install Now!' to the far right */
+}
+
 .section {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.25em;
-  color: #fff;
 }
 
 #section1 {
-  background: whitesmoke;
+  background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
   color: black;
-  /*background: #ffff33;*/
-}
-
-#section2 {
-  background: #277CCA;
 }
 
 #section3 {
   background: whitesmoke;
+  color: black;
+}
+
+#section2,#section4 {
+  background: white;
   color: black;
 }
 
@@ -38,58 +67,133 @@ body, html {
 }
 
 .feature-container > div {
+  display: flex;
+  flex-direction: column;
   border: black;
-  background-color: whitesmoke;
+  background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+  align-items: center;
   text-align: center;
   width: 80%;
-  height: 300px;
+  height: 80%;
+  padding: 0em 1em;
 }
 
-#installnow {
+.card {
+  width: 300px;
+  height: 500px;
+  margin: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.card h3 {
+  margin-bottom: 0;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+.card button {
+  padding: 10px 20px;
+  background-color: #277CCA;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#hero-section {
   display: flex;
   align-items: center;
+  width: 75%;
 }
 
-#qrlayout {
+#hero-sec-img-cont {
   display: flex;
-  /*justify-content: center;*/
+  width: 50%;
+  justify-content: center;
+}
+
+#hero-sec-img-cont > img,.cto {
+  align-self: center;
+}
+
+#hero-section-content {
+  display: flex;
   flex-direction: column;
   height: 500px;
-  width: 281.25px;
-  text-align: justify;
-  text-justify: inter-word;
+  width: 50%;
 }
 
-#installheader {
+#hero-section-content > p {
+  word-wrap: normal;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.cto {
+  width: 180px;
+  height: 40px;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add depth to the image */
+  border-radius: 20px; /* Optional for soft edges */
+}
+
+.cto1 {
+  background-color: #277CCA; 
+  color: white; 
+  border: 2px solid #277CCA;
+}
+
+.cto1:hover {
+  background-color: white;
+  color: #277CCA;
+}
+
+.cto2 {
+  background-color: #277CCA; 
+  color: white; 
+  border: 2px solid #277CCA;
+}
+
+.cto2:hover {
+  background-color: white;
+  color: #277CCA;
+}
+
+#tagline2 {
   text-align: left;
 }
 
 #installon {
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
-}
-
-img.aln {
-  align-self: center;
-}
-
-#webnav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #277CCA;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 60px;
   gap: 1em;
-}
-
-.navitems {
-  color: white;  
-  text-decoration: none;
-  font-size: 1.25em;
 }
 
 #webfooter {

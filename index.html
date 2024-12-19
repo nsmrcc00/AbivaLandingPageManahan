@@ -10,44 +10,95 @@
   
   <body>
     <nav class="navbar" id="webnav">
-      <a href=""><img src="public/abiva.png" alt="Home" width="31px" height="48px"></a>
-      <a class="navitems" href="">Home</a>
-      <a class="navitems" href="">About Us</a>
-      <a class="navitems" href="#" onclick="document.getElementById('webfooter').scrollIntoView();">Contact Us</a>
-      <a class="navitems" href="#" onclick="document.getElementById('section3').scrollIntoView();">Install Now!</a>
+      <a href=""><img src="public/abiva.png" alt="Home" width="31px" height="48px" style="padding: 0 1em 0 0;"></a>
+      <div class="nav-items-container">
+        <a class="navitems" href="">Home</a>
+        <a class="navitems" href="">About Us</a>
+        <a class="navitems" href="#" onclick="scrollToSection('webfooter')">Contact Us</a>
+      </div>
+      <a class="navitems" href="#" onclick="scrollToSection('section4')">Install Now!</a>
     </nav>
+    
     <div class="section" id="section1">
-      Cover Photo with description
-      <p>The newest way to learn has just arrived.</p>  
+      <div id="hero-section">
+        <div id="hero-sec-img-cont">
+          <img src="public/phone.png" alt="Abiva App" height="500px">        
+        </div>
+        <div id="hero-section-content">
+          <h2 id="tagline">Learn like you've never learned before.</h2>
+          <p>
+            Interactive Lessons. 
+            Personalized Learning Paths. 
+            Engaging Activities.
+            Access a wealth of educational resources. 
+            Download the Abiva app today!
+          </p>
+          <div class="hero-buttons">
+            <button class="cto cto1">Get Started</button>
+            <button class="cto cto2" onclick="scrollToSection('section3')">Learn More</button>
+          </div>
+        </div>        
+      </div>      
     </div>
+    
+<!--
     <div class="section" id="section2">
       <div class="feature-container">
-        <div>1</div>
-        <div>2</div>
+        
+        <div>
+          <h2>For Students</h2>
+          <img src="public/studentqs.jpg" alt="Abiva for Students" height="100%" width="100%">
+          <p>Learn with Abiva</p>
+        </div>
+        <div>
+          <h2>For Teachers</h2>        
+          <img src="public/teacherqs.jpg" alt="Abiva for Teachers" height="100%" width="100%">
+          <p>Teach with Abiva</p>
+        </div>
       </div>
     </div>
-    <div class="section" id="section2">
-      Features
-    </div>
+-->
+
+    
     <div class="section" id="section3">
-      <div id="installnow">
+      <div class="card">
+        <img src="public/studentqs.jpg" alt="Students">
+        <h3>For Students</h3>
+        <p>Experience personalized learning with Abiva.</p>
+        <button>Learn More</button>
+      </div>
+
+      <div class="card">
+          <img src="public/teacherqs.jpg" alt="Teachers">
+          <h3>For Teachers</h3>
+          <p>Create engaging and interactive lessons.</p>
+          <button>Learn More</button>
+      </div>
+
+      <div class="card">
+          <img src="public/parentsqt.png" alt="Parents">
+          <h3>For Parents</h3>
+          <p>Stay connected with your child's learning journey.</p>
+          <button>Learn More</button>
+      </div>
+    </div>
+
+    <div class="section" id="section4">
+      <div id="hero-section">
         <img src="public/phone.png" alt="Install Now!" height="500px">
-        <div id="qrlayout">
-        <!--<img class="aln" src="public/qr.png" alt="Install Now!" height="200px">-->
-          <h2 id="installheader">Learn like you've never learned before.</h2>
+        <div id="hero-section-content">
+          <h1 id="tagline2">Learn like you've never learned before.</h1>
           <div id="installon">
-            <img src="public/appstore.png" alt="Apple App Store" height="36px">
-            <img src="public/gplay.png" alt="Google Play Store" height="36px">
+            <a href="https://play.google.com/store/apps" target="_blank"><img src="public/appstore.png" alt="Apple App Store" height="36px"></a>
+            <a href="https://www.apple.com/ph/app-store/" target="_blank"><img src="public/gplay.png" alt="Google Play Store" height="36px"></a>
           </div>
           <p>
             Now available on Google Play and the Apple App Store.            
-          </p>
-          
-        </div>
-        
-      </div>
-      
+          </p>          
+        </div>        
+      </div>      
     </div>
+
     <footer id="webfooter">
       <nav id="icongroup">
         <a href="https://www.facebook.com/abivapublishing" target="_blank"><img src="public/facebook.png" alt="Facebook" width="48px" height="48px"></a>
@@ -59,5 +110,6 @@
         <p>Abiva Publishing House</p>
       </div>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
