@@ -4,13 +4,14 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="icon" type="image/ico" href="favicon.ico" width="41px" height="64px"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css"/>
     <title>Abiva Mobile Application</title>
   </head>
   
   <body>
     <nav class="navbar" id="webnav">
-      <a href=""><img src="public/abiva.png" alt="Home" width="31px" height="48px" style="padding: 0 1em 0 0;"></a>
+      <a href="" class="logo"><img src="public/abiva.png" alt="Home" width="31px" height="48px" style="margin: 0 1em 0 0;"></a>
       <div class="nav-items-container">
         <a class="navitems" href="">Home</a>
         <a class="navitems" href="">About Us</a>
@@ -25,7 +26,7 @@
           <img src="public/phone.png" alt="Abiva App" height="500px">        
         </div>
         <div id="hero-section-content">
-          <h2 id="tagline">Learn like you've never learned before.</h2>
+          <h2 id="tagline"><b>Learn like you've never learned before.</b></h2>
           <p>
             Interactive Lessons. 
             Personalized Learning Paths. 
@@ -41,61 +42,70 @@
       </div>      
     </div>
     
-<!--
-    <div class="section" id="section2">
-      <div class="feature-container">
-        
-        <div>
-          <h2>For Students</h2>
-          <img src="public/studentqs.jpg" alt="Abiva for Students" height="100%" width="100%">
-          <p>Learn with Abiva</p>
-        </div>
-        <div>
-          <h2>For Teachers</h2>        
-          <img src="public/teacherqs.jpg" alt="Abiva for Teachers" height="100%" width="100%">
-          <p>Teach with Abiva</p>
-        </div>
-      </div>
-    </div>
--->
-
-    
     <div class="section" id="section3">
       <div class="card">
         <img src="public/studentqs.jpg" alt="Students">
-        <h3>For Students</h3>
+        <b>For Students</b>
         <p>Experience personalized learning with Abiva.</p>
         <button>Learn More</button>
       </div>
 
       <div class="card">
-          <img src="public/teacherqs.jpg" alt="Teachers">
-          <h3>For Teachers</h3>
-          <p>Create engaging and interactive lessons.</p>
-          <button>Learn More</button>
+        <img src="public/teacherqs.jpg" alt="Teachers">
+        <b>For Teachers</b>
+        <p>Teach and create engaging and interactive lessons.</p>
+        <button>Learn More</button>
       </div>
 
       <div class="card">
-          <img src="public/parentsqt.png" alt="Parents">
-          <h3>For Parents</h3>
-          <p>Stay connected with your child's learning journey.</p>
-          <button>Learn More</button>
+        <img src="public/parentsqt.png" alt="Parents">
+        <b>For Parents</b>
+        <p>Stay connected with your child's learning journey.</p>
+        <button>Learn More</button>
       </div>
     </div>
 
     <div class="section" id="section4">
-      <div id="hero-section">
-        <img src="public/phone.png" alt="Install Now!" height="500px">
-        <div id="hero-section-content">
-          <h1 id="tagline2">Learn like you've never learned before.</h1>
-          <div id="installon">
-            <a href="https://play.google.com/store/apps" target="_blank"><img src="public/appstore.png" alt="Apple App Store" height="36px"></a>
-            <a href="https://www.apple.com/ph/app-store/" target="_blank"><img src="public/gplay.png" alt="Google Play Store" height="36px"></a>
+      <div id="features-section">
+        <h2 id="feature-header"><b>Features</b></h2>
+        <div id="feature-content">
+          <div class="feature-card">
+            <img src="public/icon1.png" alt="Interactive Learning" height="64px" width="64px">
+            <div>
+              <b>Interactive Learning</b>
+              <a href="#" target="_blank"><img src="public/arrow.png" height="32px" width="32px"></a>
+            </div>
+            <p>Placeholder</p>
           </div>
-          <p>
-            Now available on Google Play and the Apple App Store.            
-          </p>          
+          <div class="feature-card">
+            <img src="public/icon2.png" alt="Books on the go" height="64px" width="64px">
+            <div>
+              <b>Books on the go</b>
+              <a href="#" target="_blank"><img src="public/arrow.png" height="32px" width="32px"></a>
+            </div>
+            <p>Access a library of educational books anytime, anywhere.</p>
+          </div>
+          <div class="feature-card">
+            <img src="public/icon3.png" alt="Enhanced Collaboration" height="64px" width="64px">
+            <div>
+              <b>Enhanced Collaboration</b>
+              <a href="#" target="_blank"><img src="public/arrow.png" height="32px" width="32px"></a>
+            </div>
+            <p>Connect with classmates and teachers for discussions and projects.</p>
+          </div>
+          <div class="feature-card">
+            <img src="public/icon4.png" alt="Monitor Progress" height="64px" width="64px">
+            <div>
+              <b>Monitor Progress</b>
+              <a href="#" target="_blank"><img src="public/arrow.png" height="32px" width="32px"></a>
+            </div>
+            <p>Track your learning journey and see your achievements.</p>
+          </div>
         </div>        
+        <div id="installon">          
+          <a href="https://www.apple.com/ph/app-store/" target="_blank"><img src="public/appstore.png" alt="Apple App Store" height="36px"></a>
+          <a href="https://play.google.com/store/apps" target="_blank"><img src="public/gplay.png" alt="Google Play Store" height="36px"></a>
+        </div>                   
       </div>      
     </div>
 
@@ -110,6 +120,7 @@
         <p>Abiva Publishing House</p>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -17,6 +17,7 @@ body, html {
   height: 60px;
   padding: 0 1em;
   box-sizing: border-box;
+  z-index: 100;
 }
 
 .nav-items-container {
@@ -52,6 +53,7 @@ body, html {
 #section3 {
   background: whitesmoke;
   color: black;
+  display: flex;
 }
 
 #section2,#section4 {
@@ -90,6 +92,7 @@ body, html {
   align-items: center;
   justify-content: center;
   text-align: center;
+  font-size: 0.80em;
 }
 
 .card img {
@@ -100,8 +103,8 @@ body, html {
   margin-bottom: 8px;
 }
 
-.card h3 {
-  margin-bottom: 0;
+.card b {
+  margin-bottom: 10px;
 }
 
 .card p {
@@ -129,7 +132,7 @@ body, html {
   justify-content: center;
 }
 
-#hero-sec-img-cont > img,.cto {
+#hero-sec-img-cont > img,.cto{
   align-self: center;
 }
 
@@ -186,14 +189,49 @@ body, html {
   color: #277CCA;
 }
 
-#tagline2 {
-  text-align: left;
+#section4 {
+  background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+}
+
+#features-section {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 2em;
+  padding: 2em;
+}
+
+#feature-header {
+  text-align: center;
+}
+
+#feature-content {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 200px;
+  border-radius: 8px;
+  background-color: whitesmoke;
+  padding: 1em;
+}
+
+.feature-card > p {
+  font-size: 0.75em;
 }
 
 #installon {
   display: flex;
-  width: 100%;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Align items vertically (optional for equal height) */
   gap: 1em;
+  width: 100%;
 }
 
 #webfooter {
@@ -215,4 +253,47 @@ body, html {
 #footertext {
   display: flex;
   justify-content: center;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  /* Navbar adjustments */
+    .nav-items-container {
+      display: none;
+    }
+
+      #webnav a:last-child {
+      display: none;
+    }
+  .cto2 {
+    display: none;
+  }
+
+  #hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #hero-sec-img-cont,
+  #hero-section-content {
+    width: 100%;
+    text-align: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  #section1{
+    margin-top: 60px;
+  }
+  
+  #section3 {
+    flex-direction: column;
+  }
+
+  .section{ 
+    height: auto;
+    font-size: 1em;
+  }
 }
