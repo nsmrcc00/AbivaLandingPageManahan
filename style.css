@@ -164,29 +164,28 @@ body, html {
   border-radius: 8px;
   transition: all 0.3s ease;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Add depth to the image */
-  border-radius: 20px; /* Optional for soft edges */
 }
 
-.cto1 {
+.cto1,.cto2 {
   background-color: #277CCA; 
   color: white; 
   border: 2px solid #277CCA;
 }
 
-.cto1:hover {
+.cto1:hover,.cto2:hover {
   background-color: white;
   color: #277CCA;
 }
 
-.cto2 {
-  background-color: #277CCA; 
-  color: white; 
-  border: 2px solid #277CCA;
+.cto3 {
+  background-color: white; 
+  color: #277CCA; 
+  border: 2px solid white
 }
 
-.cto2:hover {
-  background-color: white;
-  color: #277CCA;
+.cto3:hover {
+  background-color: #277CCA;
+  color: white;
 }
 
 #section4 {
@@ -228,8 +227,8 @@ body, html {
 
 #installon {
   display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Align items vertically (optional for equal height) */
+  justify-content: center;
+  align-items: center;
   gap: 1em;
   width: 100%;
 }
@@ -257,14 +256,14 @@ body, html {
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
-  /* Navbar adjustments */
-    .nav-items-container {
-      display: none;
-    }
+  .nav-items-container {
+    display: none;
+  }
 
-      #webnav a:last-child {
-      display: none;
-    }
+  /* #webnav a:last-child {
+    display: none;
+  } */
+
   .cto2 {
     display: none;
   }
